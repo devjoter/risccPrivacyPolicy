@@ -3,17 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Support</title>
+    <title>riSCC</title>
     <style>
       body {
         font-family: "Roboto", sans-serif;
-        margin: 50px;
-        color: #052243;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         background-color: #e6e8ec;
+      }
+      header {
+        background-color: #052243;
+        color: #fff;
+        padding: 10px 20px;
+        justify-content: center;
+        display: flex;
+      }
+      nav {
+        background-color: #364e68;
+        padding: 10px;
+        text-align: center;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 16px;
+        margin: 0 5px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      nav a:hover {
+        background-color: #697a8e;
       }
       .container {
         max-width: 600px;
-        margin: 0px auto;
+        margin: 50px auto;
         padding: 40px;
         background-color: #fff;
         border-radius: 8px;
@@ -21,9 +45,6 @@
       }
       form {
         margin-top: 20px;
-      }
-      h1 {
-        margin-top: 0;
       }
       label {
         display: block;
@@ -54,11 +75,32 @@
       input[type="submit"]:hover {
         background-color: #364e68;
       }
+      img {
+        float: left;
+        align-self: center;
+      }
+      #title {
+        padding-left: 20px;
+      }
+      #contact {
+        margin-top: 0;
+        color: #052243;
+      }
     </style>
   </head>
   <body>
+    <header>
+      <img src="./Layer_1.png" alt="riSCC icon.png" />
+      <h1 id="title">riSCC</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">About</a>
+      <a href="disclaimer.html">Services</a>
+      <a href="support.html">Support</a>
+    </nav>
     <div class="container">
-      <h1>Contact Support</h1>
+      <h1 id="contact">Contact Support</h1>
       <form
         action="mailto:risccapplication@gmail.com"
         method="post"
