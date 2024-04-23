@@ -4,20 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy Preview</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
-      body {
-        font-family: "Roboto", sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #e6e8ec;
-      }
-      .container {
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 40px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      h1 {
+        padding-left: 20px;
       }
       h2,
       h3,
@@ -30,25 +20,33 @@
       h3 {
         margin-top: 30px;
       }
-      span {
-        font-weight: bold;
-      }
       ul {
         list-style-type: none;
         padding-left: 0;
       }
-      a {
+      a.email:hover,
+      a.email {
         color: #052243;
         text-decoration: inherit;
         font-weight: 600;
         margin-bottom: 15px;
-      }
-      a:hover {
         text-decoration: underline;
       }
     </style>
   </head>
   <body>
+    <header>
+      <img src="./Layer_1.png" alt="riSCC icon.png" />
+      <h1 id="title">riSCC</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">About</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="PrivacyPolicy.html">Privacy Policy</a>
+      <a href="userPrivacyPolicy.html">User Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </nav>
     <div class="container">
       <h2>User Privacy Policy</h2>
       <p>Effective Date: April 16, 2024</p>
@@ -152,7 +150,7 @@
       <p>
         Users may access, update, or delete their personal information stored in
         the App by contacting us at
-        <a href="mailto:risccapplication@gmail.com"
+        <a class="email" href="mailto:risccapplication@gmail.com"
           >risccapplication@gmail.com</a
         >
         or by phone at 512-324-9650. However, please note that certain
@@ -173,7 +171,7 @@
       <p>
         Anokhi Jambusaria-Pahlajani<br />
         E-mail:
-        <a href="mailto:risccapplication@gmail.com"
+        <a class="email" href="mailto:risccapplication@gmail.com"
           >risccapplication@gmail.com</a
         ><br />
         Phone Number: 512-324-9650<br />

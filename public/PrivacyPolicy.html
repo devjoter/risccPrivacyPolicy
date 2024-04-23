@@ -4,20 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy Preview</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
-      body {
-        font-family: "Roboto", sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #e6e8ec;
-      }
-      .container {
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 40px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      h1 {
+        padding-left: 20px;
       }
       h2,
       h3,
@@ -31,25 +21,35 @@
         color: #052243;
         margin-bottom: 0;
       }
-      span {
-        font-weight: bold;
-      }
       ul {
         list-style-type: none;
         padding-left: 0;
-      }
-      a {
         color: #052243;
         text-decoration: inherit;
         font-weight: 600;
         margin-bottom: 15px;
       }
-      a:hover {
+      ul a:hover,
+      ul a:link,
+      ul a:visited{
         text-decoration: underline;
+        color: #052243;
       }
     </style>
   </head>
   <body>
+    <header>
+      <img src="./Layer_1.png" alt="riSCC icon.png" />
+      <h1 id="title">riSCC</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">About</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="PrivacyPolicy.html">Privacy Policy</a>
+      <a href="userPrivacyPolicy.html">User Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </nav>
     <div class="container">
       <div>
         <h2>Privacy Policy</h2>
@@ -151,9 +151,9 @@
           Review the privacy notice in full.
         </p>
         <br /><br />
-        <h3 id="Go back">TABLE OF CONTENTS</h3>
+        <h3 id="GoBack">TABLE OF CONTENTS</h3>
         <br />
-        <ul>
+        <ul id="list">
             <li><a href="#1">1. WHAT INFORMATION DO WE COLLECT?</a></li><br>
             <li><a href="#2">2. HOW DO WE PROCESS YOUR INFORMATION?</a></li><br>
             <li><a href="#3">
@@ -1292,7 +1292,10 @@
           subject access request.
         </p>
       </div>
-      <a href="#Go back">GO BACK TO TABLE OF CONTENTS</p>
+      <a style="text-decoration: underline; 
+      color: #052243; 
+      font-weight: 600;" 
+      href="#GoBack">GO BACK TO TABLE OF CONTENTS</p>
     </div>
   </body>
 </html>
